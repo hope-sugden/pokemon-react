@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.scss';
+import PokemonCard from './components/PokemonCard/PokemonCard';
 import NavBar from './containers/NavBar/NavBar';
 import PokemonImageList from './containers/PokemonImageList/PokemonImageList';
 import pokemonArr from "./data/pokemon";
@@ -50,8 +52,8 @@ const App = () => {
   }
 
 
-
   return (
+    <Router>
     <div className="">
       <NavBar 
           searchText={searchText}
@@ -60,8 +62,21 @@ const App = () => {
           fuzzySearchChange={handleFuzzySearch}
           searchResultCount={pokemons.length}
       />
-      <PokemonImageList pokemonArr={pokemons} />
+
+      <Routes>
+        <Route 
+          path="/" 
+          element={<PokemonImageList pokemonArr={pokemons} />}
+        ></Route>
+
+        <Route 
+          path="/pokemon/:id" 
+          element={<PokemonCard pokemonArr={pokemons} />}
+        ></Route>
+
+      </Routes>
     </div>
+    </Router>
   );
 }
 

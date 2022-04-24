@@ -13,6 +13,7 @@
   height: 180px;
   border-radius: 3px;
   overflow: hidden;
+  text-align: center;
 }
 .poke-image-card > .card__image {
   transform: scale(1.1);
@@ -21,4 +22,5 @@
 .poke-image-card > .card__heading {
   font-size: 1.5rem;
   font-weight: normal;
+  text-align: center;
 }

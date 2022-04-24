@@ -1,18 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { toProper } from "../../utils";
 import './PokemonImage.scss';
 
-const PokemonImage = ({ name, sprite}) => {
-
-  // converts a string to a proper string - makes first letter a capital
-  const toProper = (string) => {
-    return string[0].toUpperCase() + string.substring(1);
-  }
+const PokemonImage = ({ id, name, sprite}) => {
 
   return (
     <>
       <article className='poke-image-card' >
-        <h2 className='card__heading' >{toProper(name)}</h2>
-        <img src={sprite} alt={ toProper(name) } class="card__image" />
+        <Link to={"/pokemon/" + id} >
+          <h2 className='card__heading' >{toProper(name)}</h2>
+        </Link>
+        <img src={sprite} alt={ toProper(name) } className="card__image" />
       </article>
     </>
   )
