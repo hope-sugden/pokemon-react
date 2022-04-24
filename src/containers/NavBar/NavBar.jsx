@@ -1,10 +1,18 @@
 import React from 'react'
+import SearchBox from '../../components/SearchBox/SearchBox';
 import './NavBar.scss';
 
-const NavBar = () => {
+const NavBar = ( { searchText, searchTextChange, fuzzySearch, fuzzySearchChange, searchResultCount}  ) => {
   return (
     <div className='navbar' >
          <h1 className='navbar__header' >Welcome!</h1>
+         <SearchBox 
+          searchText={searchText}
+          searchTextChange={searchTextChange}
+          fuzzySearch={fuzzySearch}
+          fuzzySearchChange={fuzzySearchChange}
+          searchResultCount={searchResultCount}
+          />
     </div>
   )
 }

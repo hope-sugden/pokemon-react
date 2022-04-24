@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.search-box {
+  background-color: #eee;
+}
+.search-box__name-search {
+  padding: 5px;
+  font-size: 16px;
+  border: 2px grey solid;
+  border-radius: 5px;
+  color: black;
+}
+.search-box__name-search:focus {
+  border: 2px #3b4cca solid;
+  outline: none;
+}
+.search-box__fuzzy-ind {
+  padding: 10px 5px;
+  font-size: 16px;
+  color: black;
+}
+.search-box label {
+  margin: 10px 2px;
+}
+.search-box__results {
+  margin: 15px 2px;
+}
