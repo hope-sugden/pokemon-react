@@ -9,11 +9,14 @@
   flex-direction: column;
   background-color: #ffb7b7;
   max-width: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 3px;
   overflow: hidden;
 }
 .poke-image-card > .card__image {
-  transform: scale(1.25);
+  transform: scale(1.1);
+  object-fit: cover;
 }
 .poke-image-card > .card__heading {
   font-size: 1.5rem;
