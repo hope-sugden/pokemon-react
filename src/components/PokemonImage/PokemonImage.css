@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.poke-image-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffb7b7;
+  max-width: 200px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.poke-image-card > .card__image {
+  transform: scale(1.25);
+}
+.poke-image-card > .card__heading {
+  font-size: 1.5rem;
+  font-weight: normal;
+}

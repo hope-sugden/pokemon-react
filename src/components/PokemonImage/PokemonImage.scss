@@ -1,0 +1,22 @@
+@use "../../styles/variables" as *;
+@use "../../styles/reset" as *;
+
+  .poke-image-card {
+      
+    display: flex;
+    flex-direction: column;
+    background-color: $color-foreground;
+    max-width: 200px;
+    border-radius: 3px;
+    overflow: hidden;
+
+    > .card__image {
+      transform: scale(1.25);
+    }
+
+      > .card__heading {
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+
+    }
