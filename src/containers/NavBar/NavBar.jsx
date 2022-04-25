@@ -5,7 +5,7 @@ import './NavBar.scss';
 const NavBar = ( { searchText, searchTextChange, fuzzySearch, fuzzySearchChange, searchResultCount}  ) => {
   return (
     <div className='navbar' >
-         <h1 className='navbar__header' >Welcome!</h1>
+         <h1 className='navbar__header' >PokéDom - gotta code 'em all!</h1>
          <SearchBox 
           searchText={searchText}
           searchTextChange={searchTextChange}
