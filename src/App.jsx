@@ -6,7 +6,7 @@ import pokemonArr from "./data/pokemon";
 
 const App = () => {
 
-  // add state into equatition
+  // add state into equation
   const [ pokemons, setPokemons ] = useState( pokemonArr );
 
   // state for search box and fuzzy indicator
