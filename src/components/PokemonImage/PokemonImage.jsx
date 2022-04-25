@@ -12,7 +12,7 @@ const PokemonImage = ({ name, sprite}) => {
     <>
       <article className='poke-image-card' >
         <h2 className='card__heading' >{toProper(name)}</h2>
-        <img src={sprite} alt={ toProper(name) } class="card__image" />
+        <img src={sprite} alt={ toProper(name) } className="card__image" />
       </article>
     </>
   )
